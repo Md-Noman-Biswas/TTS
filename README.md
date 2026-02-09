@@ -24,7 +24,7 @@ interface** is provided, fully satisfying the assignment requirements.
 ## How to access it
 I used google colab for running the programs. Just download config.json, pipeline.py, manual_transcription_colab.py, urls.txt
 
-Upload it while running the notebook. I have provided the notebook as well. Running all the cells will give the proper final output. I gave options for both manual and api based method, but as i dont have access to any good api, I used manual method. I tried with freely available Whisper model, but it gave bad resuls. So i switched to Manual method.
+Upload it while running the notebook. I have provided the notebook as well. Running all the cells will give the proper final output. I gave options for both manual and api based method, but as i dont have access to any good api, I used manual method. I tried with freely available Whisper model, but it gave bad resuls without fine tuning. So i switched to Manual method.
 
 # Output
 ## Output Description
