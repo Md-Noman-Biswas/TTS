@@ -1,32 +1,46 @@
-Bengali Speech Dataset – Manual Transcription
+# Bengali Audio Processing & Transcription Pipeline
 
-Dataset Source:
-- Audio extracted from publicly available YouTube video(s)
+This repository contains a **complete end-to-end pipeline** for creating a Bengali speech
+dataset from YouTube videos. It covers audio downloading, preprocessing, segmentation,
+and transcription preparation.
 
-Processing Pipeline:
-- Audio downloaded and converted to WAV (22050 Hz, mono, 16-bit PCM)
-- Silence-based segmentation (2–12 seconds)
-- Automatic transcription attempted
-- Low-quality segments manually transcribed
+The pipeline is designed to **work without any paid Speech-to-Text (STT) API**.
+When automatic transcription is unreliable or unavailable, a **manual transcription
+interface** is provided, fully satisfying the assignment requirements.
 
-Transcription Method:
-- Manual transcription performed by listening to each audio segment
-- Pretrained model like Whisper was giving bad results without finetuning. So manual one is preferred.
-- Bengali text typed by human annotator
-- Segments with poor ASR output corrected manually
+---
 
-Dataset Structure:
-- wavs/ : audio segments
-- metadata_final.csv : LJSpeech-style metadata
+## What This Project Does
 
-Metadata Format:
-audio_filename|transcription_text|speaker_name
+1. Downloads audio from YouTube videos
+2. Converts audio to standard WAV format
+3. Splits audio into clean speech segments
+4. Performs basic quality checks
+5. Generates LJSpeech-style metadata
+6. Allows **manual transcription** for failed segments
 
-Language:
-- Bengali (Bangla)
+---
 
-Speaker:
-- Single speaker (speaker1)
+## How to access it
+I used google colab for running the programs. Just download config.json, pipeline.py, manual_transcription_colab.py, urls.txt
 
-Notes:
-- Some segments were skipped if unclear or noisy
+Upload it while running the notebook. I have provided the notebook as well. Running all the cells will give the proper final output. I gave options for both manual and api based method, but as i dont have access to any good api, I used manual method. I tried with freely available Whisper model, but it gave bad resuls. So i switched to Manual method.
+
+# Output
+## Output Description
+
+The pipeline generates a Bengali speech dataset inside the `output/` directory.
+
+- **Audio files**:  
+  Stored in `output/wavs/` as mono WAV files (22050 Hz, 16-bit PCM), named `audio_000000.wav`, `audio_000001.wav`, etc.
+
+- **Metadata**:  
+  `metadata.csv` (pipe-delimited, UTF-8) with format:  
+  `audio_filename|transcription_text|speaker_name`
+
+- **Final output**:  
+  After manual correction, a clean `metadata_final.csv` is produced.
+
+- **Submission**:  
+  A ZIP file containing:
+
