@@ -1,0 +1,25 @@
+# Core
+python>=3.9
+
+# Audio processing
+ffmpeg
+pydub
+soundfile
+scipy
+numpy
+noisereduce
+
+# Data handling
+pandas
+
+# Notebook / UI (Colab)
+ipywidgets
+IPython
+
+# Downloading (if using YouTube pipeline)
+yt-dlp
+
+# Optional (only if ASR was used at any point)
+torch
+transformers
+openai-whisper

@@ -1,0 +1,10 @@
+{
+  "output_dir": "output",
+  "sample_rate": 22050,
+  "min_segment_duration": 3.0,
+  "max_segment_duration": 12.0,
+  "min_silence_len": 500,
+  "silence_thresh": -35,
+  "use_whisper": false,
+  "description": "Manual transcription pipeline"
+}

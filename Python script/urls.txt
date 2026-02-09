@@ -1,0 +1,17 @@
+# YouTube URLs for processing
+# Add one URL per line
+# Lines starting with # are comments
+
+# Example Bengali educational video (replace with actual URLs)
+# https://www.youtube.com/watch?v=EXAMPLE_ID_1
+
+# You can add multiple URLs:
+# https://www.youtube.com/watch?v=EXAMPLE_ID_2
+# https://www.youtube.com/watch?v=EXAMPLE_ID_3
+
+# Tips for choosing videos:
+# - Use videos with clear Bengali speech
+# - Educational content, lectures, or podcasts work best
+# - Avoid videos with background music or multiple speakers
+# - Videos should be 5-30 minutes long for best results
+https://youtu.be/qEnqmVXeDBc?si=SVKulCt4O8bxVzij
